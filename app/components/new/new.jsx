@@ -24,6 +24,7 @@ const New = () => {
             {
                 goods.slice(0, 6).map(good => (   
                     <Card
+                    key={good.id}
                     id={good.id}
                     title={good.title}
                     image={good.photo[0]}
