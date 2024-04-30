@@ -11,8 +11,8 @@ const Card = ({id, title, image, price}) => {
         <div className=' bg-white p-7 font-bold' style={{border:"1px solid black"}}>
             <div className='flex justify-between'>
                 <span>{title}</span>
-                <Link href="/" className='hover:scale-110 transition-transform'><FaRegHeart size={30}/></Link>
-            </div>
+                <FaRegHeart size={30}/>
+                </div>
             <img className='hover:-rotate-3 transition-all scale-95' src={image} alt="photo"/>
             
             <div>

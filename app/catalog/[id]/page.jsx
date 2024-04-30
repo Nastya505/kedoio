@@ -34,11 +34,12 @@ const CatalogIdPage = () => {
         <div className="flex items-center gap-20">
         <div
           style={{ borderRight: "1px solid black" }}
+
           className="md:hidden w-72 h-full flex flex-col items-center justify-center"
         >
           {good.photo &&
             good.photo.map(
-              (p, index) => index !== 0 && <img className="w-40" src={p} />
+              (p, index) => index !== 0 && <img key={index} className="w-40" src={p} />
             )}
         </div>
         <div className="md:w-full w-1/2 p-3 flex justify-center items-center bg-white">
@@ -57,7 +58,7 @@ const CatalogIdPage = () => {
             <div className="flex gap-3 flex-wrap ">
               {good.size &&
                 good.size.map((s) => 
-                  <span className="hover:bg-white p-1 rounded-xl">{s}</span>
+                  <span key={s} className="hover:bg-white p-1 rounded-xl">{s}</span>
                 )}
             </div>
           </div>
@@ -67,6 +68,7 @@ const CatalogIdPage = () => {
               {good.colors &&
                 good.colors.map((color) => 
                   <div
+                  key={color}
                   className="hover:scale-95"
                     style={{ background: color, width: "30px", height: "30px" }}
                   ></div>
