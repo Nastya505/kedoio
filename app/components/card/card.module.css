@@ -1,0 +1,20 @@
+.line{
+    position: relative;
+    font-size: 16px;
+    color: #ccc;
+}
+.skewLine {
+    position: absolute;
+    top: 10px;
+    left: -7px;
+  width: 65px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(-15deg);
+}
+@media(max-width:380px){
+  .line{
+    display: none;
+  }
+  
+}

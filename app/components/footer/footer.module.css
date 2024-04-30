@@ -1,0 +1,22 @@
+.circleBig{
+    position: absolute; 
+    top: 0;
+    right: -50px;
+    background-color:#D5DBFC;
+    height:400px;
+    width:5560px;
+    border-radius:50%;
+    filter: blur(100px);
+    z-index: -2;
+}
+.circleSmall{
+    position: absolute; 
+    top: -50px;
+    right: 100px;
+    background-color: #EBD5FC;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    filter: blur(100px);
+    z-index: -2;
+}
